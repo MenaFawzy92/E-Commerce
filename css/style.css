@@ -1,0 +1,97 @@
+/* *********General Styles********* */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.border-curve{
+    border-radius: 10px
+}
+/* ***************** Header ***************** */
+header{
+    height: 70px;
+    background-color: gainsboro;
+    padding: 10px 0px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header-content{
+    display: flex;/* to enable the organize*/
+    justify-content: space-between;/*control rows*/
+    /* align-items: center;*/ 
+    /* control coloumn */
+}
+a{text-decoration: none;}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: rgba(30, 133, 85, 0.849);
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    color: rgba(30, 133, 85, 0.849);
+    /* background-color: rgb(131, 27, 216); */
+    border: 1px dashed #ccc;
+    min-width: 80px;
+    padding:  5px;
+    margin: 6px 7px;
+}
+/*********************************************************/
+/*
+مؤقتا في هيدر الهووم عندي تاج عايوين نعر فيه اسم اليوزر بعد م يعمل تسديل 
+فـ حاليا هخفيه
+*/
+nav ul#user_info{ display: none;}
+
+
+/* **************************form************************** */
+.section-form{
+    /* to center the div */
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%,-50%);
+   
+    background-color: rgb(16, 153, 45);
+    
+    /* to center the text */
+    text-align: center;
+    /* to improve style */
+    width: 50%;
+    padding: 20px;
+}
+.section-form h2{
+    font-size: 47px;
+    color: azure;
+}
+
+.section-form input{
+    display: block;
+    width: 100%; /*didn't take all as the padding has been used in section-form*/
+    height: 30px;
+    margin: 5px 0px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    /* to remove the border when focus on input item */
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.section-form input[type="submit"]:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+
